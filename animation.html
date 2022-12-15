@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit</title>
+    <style>
+        .main {
+            height: 40vh;
+            width: 30vw;
+            border: 5px solid red;
+            background-color: red;
+            position: relative;
+            animation: box 3s infinite;
+            background-repeat: no-repeat;
+
+        }
+
+        @keyframes box {
+            from{margin-top:0px;
+    margin-left:0px;
+
+}
+to{
+   margin-left:150px;
+   margin-top:20rem; 
+}
+
+
+            0% {
+                margin-left: 0rem;
+                margin-top: 0rem;
+
+            }
+
+            25% {
+                margin-left: 20rem;
+                margin-top: 0rem;
+                background-color: aquamarine;
+
+            }
+
+            50% {
+                margin-left: 20rem;
+                margin-top: 20rem;
+                border-radius: 30%;
+                transform: rotate(50deg);
+
+
+
+            }
+
+            75% {
+
+                margin-left: 0rem;
+                margin-top: 20rem;
+                background-image: url(./my1.jpg)
+            }
+
+            100% {
+                margin-left: 0rem;
+                margin-top: 0rem;
+            }
+        }
+
+
+
+
+
+
+        #box {
+            height: 150vh;
+            width: 100vw;
+            border: 3px solid blue;
+            background-color: antiquewhite;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box">
+
+
+        <div class="main">
+            <h2>Animi1</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
